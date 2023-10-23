@@ -35,13 +35,13 @@ namespace TestingOOP
                     switch (num1)
                     {
                         case 1:
-                            Student.checkingDynamicObject();
+                            Arrays.checkingDynamicObject();
                             break;
                         case 2:
-                            Student.checkingDateTime();
+                            Arrays.checkingDateTime();
                             break;
                         case 3:
-                            Student.CheckingArr();
+                            Arrays.CheckingArr();
                             break;
                         case 4:
                             Console.WriteLine("----- Loading Please Wait.... -----");
@@ -50,7 +50,7 @@ namespace TestingOOP
                             string inputEmail = Console.ReadLine();
                             Console.WriteLine("Enter Body or Subject Name: ");
                             string SubName = Console.ReadLine(); 
-                            Student.sendEmail(inputEmail, SubName);
+                            Arrays.sendEmail(inputEmail, SubName);
                             break;
                         case 5:
                             Console.WriteLine("Enter Elements of Array: ");
@@ -58,7 +58,7 @@ namespace TestingOOP
                             string[] inputConverted = inputArray.Split(',');
                             int[] finalArray = Array.ConvertAll(inputConverted, int.Parse);
                             Console.WriteLine($"Total Inputs Count: {finalArray.Length}");
-                            Student.ReverseOfArray(finalArray, 0, (finalArray.Length - 1));
+                            Arrays.ReverseOfArray(finalArray, 0, (finalArray.Length - 1));
                             int incrementindex = 0;
                             for(var i =0; i < finalArray.Length; i++)
                             {
@@ -69,7 +69,7 @@ namespace TestingOOP
                             Console.ReadKey();
                             break;
                         case 6:
-                            var getDetails  = Student.GetDeviceInfo();
+                            var getDetails  = Arrays.GetDeviceInfo();
                             Console.WriteLine(getDetails);
                             Console.WriteLine("Press any Key to Exit");
                             Console.ReadKey();

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace TestingOOP
 {
-    abstract class Student
+    abstract class Arrays
     {
         protected abstract string MyName();
         StringBuilder sB = new StringBuilder();
