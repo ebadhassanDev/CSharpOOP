@@ -29,7 +29,7 @@ namespace TestingOOP
                 Console.WriteLine($"You received Frind Request from {item}");
             }
             string inputName;
-            Console.WriteLine("Here is your Friend Request");
+            Console.WriteLine("Any request you want to delete.?");
             inputName = Console.ReadLine();
             switch (inputName)
             {
@@ -37,9 +37,9 @@ namespace TestingOOP
                 checkName =  stack.Contains(inputName);
                     while(stack.Count() > 0)
                     {
-                        if (checkName)
+                        if (checkName == stack.Any())
                         {
-                            Console.WriteLine("Amir Found");
+                            Console.WriteLine($"{inputName} Found");
                             stack.Pop();
                             stack = new Stack<string>(removedCollection);
                         }
