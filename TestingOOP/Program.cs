@@ -12,7 +12,7 @@ namespace TestingOOP
     {
         static void Main(string[] args)
         {
-            
+            Console.Title = "Application For Basic Understanding OOP.";
             Console.WriteLine("-------------------------  Are you Sure to Run this Console App? -------------------------" +
                 "\x0A Type Yes (To continue) " +
                 "\x0A Type No (To Exit)");
