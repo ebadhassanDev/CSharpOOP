@@ -108,6 +108,10 @@ namespace TestingOOP
                 SmtpClient client = new SmtpClient();
                 if (toSendEmail != null || toSendEmail != "")
                 {
+                    Console.WriteLine("Enter from Email: ");
+                    string userName = Console.ReadLine();
+                    Console.WriteLine("Enter from Password: ");
+                    string password = Console.ReadLine();
                     mail.From = new MailAddress("nabsub.amjadabbas@gmail.com");
                     mail.To.Add(new MailAddress($"{toSendEmail}"));
                     mail.Subject = $"Hello Dear, {subjectName}";
@@ -117,7 +121,7 @@ namespace TestingOOP
                     client.Host = "smtp.gmail.com";
                     client.EnableSsl = true;
                     client.UseDefaultCredentials = true;
-                    client.Credentials = new NetworkCredential("nabsub.amjadabbas@gmail.com", "Amjad23456789");
+                    client.Credentials = new NetworkCredential(userName,password);
                     client.DeliveryMethod = SmtpDeliveryMethod.Network;
                     Thread.Sleep(5000);
                     Console.WriteLine($"Sending Email to {toSendEmail}, Please Wait");

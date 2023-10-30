@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,8 +15,8 @@ namespace TestingOOP
         {
             result = n1 | n2;
             Console.WriteLine($"The Convertion of {n1} & {n2} using OR Operator is: {result}");
+            Thread.Sleep(7000);
             Console.WriteLine("Press any key to Exit");
-            Console.ReadKey();
             return result;
         }
         public static int SumOfAray()
