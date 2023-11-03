@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YamlDotNet.Core.Tokens;
 
 namespace TestingOOP
 {
@@ -15,8 +16,6 @@ namespace TestingOOP
         {
             result = n1 | n2;
             Console.WriteLine($"The Convertion of {n1} & {n2} using OR Operator is: {result}");
-            Thread.Sleep(7000);
-            Console.WriteLine("Press any key to Exit");
             return result;
         }
         public static int SumOfAray()
@@ -42,6 +41,18 @@ namespace TestingOOP
                 else message += $"\x0A You Pressed {element.ToString()}";
             }
             return message;
+        }
+        public static string FindDiffElement()
+        {
+            List<int> DiffElements = new List<int>();
+            int[] commonElement;
+            int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+            int[] arr2 = { 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 };
+
+            DiffElements = arr.Where(x => !arr2.Contains(x)).ToList();
+            commonElement = arr.Intersect(arr2).ToArray();
+            var obj = new { DiffElements, commonElement }.ToString();
+            return obj;
         }
 
     }
