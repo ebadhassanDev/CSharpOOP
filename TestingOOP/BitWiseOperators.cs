@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -31,6 +32,20 @@ namespace TestingOOP
             Console.WriteLine($"The Sum of Array is {sum}");
             Console.ReadKey();
             return sum;
+        }
+        public static void testTime()
+        {
+            
+            int[] arr = { 1,2,3,4,5,6,7,8,9,12,3355,54,21,32,65,21,32,564,21,1000,32,6554,87,5,32,21,564,500};
+            Array.Sort(arr);
+            Stopwatch st = new Stopwatch();
+            st.Start();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine($"Printing Element {arr[i]}");
+            }
+            st.Stop();
+            Console.WriteLine($"Time to End this For is: {st.ElapsedTicks}, \x0A Milliseconds:  {st.ElapsedMilliseconds}");
         }
         public static string CheckKeyPress(List<char> a)
         {
