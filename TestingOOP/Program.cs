@@ -13,6 +13,10 @@ namespace TestingOOP
         static void Main(string[] args)
         {
             Console.Title = "Application For Basic Understanding OOP.";
+            //TwilioMessage s = new TwilioMessage();
+            //s.SendMessage();
+            DateTimeConverstion d = new DateTimeConverstion();
+            d.LocalToUTCConvrtion();
             Console.WriteLine("-------------------------  Are you Sure to Run this Console App? -------------------------" +
                 "\x0A Type Yes (To continue) " +
                 "\x0A Type No (To Exit)");
@@ -20,7 +24,7 @@ namespace TestingOOP
             switch (input)
             {
                 case "Yes":
-                    Console.WriteLine("Please Enter your Name: ");
+                    Console.Write("Please Enter your Name: ");
                     string userName = Console.ReadLine();
                     Console.WriteLine($"Wait {userName} while we setup Application.");
                     Thread.Sleep(4000);
