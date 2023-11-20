@@ -13,8 +13,8 @@ namespace TestingOOP
     internal class TwilioMessage 
     {
         
-        string accessID = "AC0c2f48abe2f3a94353edcc5e44e84bc5";
-        string authTokn = "935e24ebeeff2a5eae5fcfb0dbf569eb";
+        string accessID = "Key";
+        string authTokn = "Key";
        
         public string SendMessage()
         {
