@@ -1,0 +1,69 @@
+﻿{
+  "messaging_product": "whatsapp",
+  "to": "923346718523",
+  "type": "template",
+  "template": {
+    "name": "marketing_template",
+    "language": {
+      "code": "en_US"
+    },
+    "components": [
+      {
+        "type": "header",
+        "parameters": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https://vbth-cdn.s3-eu-central-1.amazonaws.com/users/sMQsUM187/lsMQ-QUYw/assets/bg_new_text2909_250756280.png"
+            }
+          }
+        ]
+      },
+      {
+        "type": "body",
+        "parameters": [
+          {
+            "type": "text",
+            "text": "This is the new Formatting text message for marketing campign"
+          },
+          {
+            "type": "currency",
+            "currency": {
+              "fallback_value": "VALUE",
+              "code": "USD",
+              "amount_1000": "NUMBER" // *1000
+            }
+          },
+          {
+            "type": "date_time",
+            "date_time": {
+              "fallback_value": "MONTH DAY, YEAR"
+            }
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "sub_type": "quick_reply",
+        "index": "0",
+        "parameters": [
+          {
+            "type": "payload",
+            "payload": "PAYLOAD"
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "sub_type": "quick_reply",
+        "index": "1",
+        "parameters": [
+          {
+            "type": "payload",
+            "payload": "PAYLOAD"
+          }
+        ]
+      }
+    ]
+  }
+}

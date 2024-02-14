@@ -14,9 +14,15 @@ namespace TestingOOP
         {
             Console.Title = "Application For Basic Understanding OOP.";
             //TwilioMessage s = new TwilioMessage();
-            //s.SendMessage();
-            DateTimeConverstion d = new DateTimeConverstion();
-            d.LocalToUTCConvrtion();
+            //var returnGuid = s.GenerateGloalUserId();
+            //Console.WriteLine(returnGuid);
+            //Thread.Sleep(5000);
+            //LongCalculator c    = new LongCalculator();
+            //c.Calcualtion();
+            //DateTimeConverstion d = new DateTimeConverstion();
+            //d.LocalToUTCConvrtion();
+            var checkvalue = Arrays.ReplceHTML();
+
             Console.WriteLine("-------------------------  Are you Sure to Run this Console App? -------------------------" +
                 "\x0A Type Yes (To continue) " +
                 "\x0A Type No (To Exit)");

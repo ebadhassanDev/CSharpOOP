@@ -196,5 +196,14 @@ namespace TestingOOP
             }
                 return new string(charArrayNewUpdated);
         }
+        public static string ReplceHTML()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("<p>{0}</p>");
+
+            sb.Replace("{0}", "prince of new era");
+
+            return sb.ToString();
+        }
     }
 }
